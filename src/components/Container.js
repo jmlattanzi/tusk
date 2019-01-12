@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+// import axios from '../axios'
 import InputForm from './InputForm'
 import List from './List'
 // import { generateID } from '../utils/generateID'
@@ -21,6 +22,15 @@ class Container extends Component {
             input: null,
         }
     }
+
+    //////// LIFECYCLE /////////
+    // CORS errors.... CORS errors everywhere
+    // componentDidMount() {
+    //     axios
+    //         .get('/tasks')
+    //         .then((data) => console.log(data))
+    //         .catch((err) => console.log(err))
+    // }
 
     /////// HANDLERS /////////
     handleDelete = (id) => {
@@ -89,7 +99,7 @@ class Container extends Component {
     }
 
     handleSubmit = () => {
-        if (this.state.input !== ' ' || this.state.input !== null) {
+        if (this.state.input !== '' || this.state.input !== null) {
             // copy the current form of this.state.itemList
             let arr = [...this.state.itemList]
             // craft a new object to be pushed onto this.state.itemList
