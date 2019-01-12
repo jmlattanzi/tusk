@@ -1,0 +1,11 @@
+.Submit {
+    border-style: none;
+    border-radius: 15px;
+    width: 100px;
+    background-color: lightblue;
+}
+
+.Submit:hover {
+    background-color: #eee;
+    cursor: pointer;
+}

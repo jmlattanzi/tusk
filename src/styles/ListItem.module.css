@@ -1,0 +1,75 @@
+.ItemContainer {
+    text-align: right;
+}
+
+.Date {
+    font-size: 10px;
+    color: #ccc;
+}
+
+.Item {
+    width: 100%;
+    min-height: 50px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px auto;
+}
+
+.Item:hover {
+    box-shadow: 0 3px 6px #eee;
+}
+
+.Content {
+    width: auto;
+    text-align: left;
+}
+
+.Controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.InputBox {
+    width: 400px;
+    margin: 10px 10px 5px 10px;
+    border-style: none;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+}
+
+/* this is redundant i know, will fix soon */
+.Submit {
+    border-style: none;
+    border-radius: 15px;
+    width: 50px;
+    height: 25px;
+    background-color: lightblue;
+}
+
+.Submit:hover {
+    background-color: #eee;
+}
+
+.EditBox {
+    border-style: none;
+}
+
+.Hidden {
+    display: none;
+}
+
+i {
+    cursor: pointer;
+}
+
+i:hover {
+    color: red;
+}

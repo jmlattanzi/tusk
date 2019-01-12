@@ -1,0 +1,16 @@
+.Container {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.InputBox {
+    width: 400px;
+    margin: 0 10px;
+    border-style: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+}
