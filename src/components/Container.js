@@ -90,16 +90,14 @@ class Container extends Component {
     }
 
     handleInput = (e) => {
-        // fix blankposting bruh
-        if (e.target.value === '' || e.target.value === undefined) {
-            console.log('error: input is required')
-        } else {
-            this.setState({ input: e.target.value })
-        }
+        this.setState({ input: e.target.value })
     }
 
-    handleSubmit = () => {
-        if (this.state.input !== '' || this.state.input !== null) {
+    handleSubmit = (e) => {
+        e.preventDefault()
+        if (this.state.input === null || this.state.input === '') {
+            console.log('Error: willl not accept empty post')
+        } else {
             // copy the current form of this.state.itemList
             let arr = [...this.state.itemList]
             // craft a new object to be pushed onto this.state.itemList
@@ -118,8 +116,6 @@ class Container extends Component {
 
             console.log(`input captured and submitted: ${this.state.input}`)
             console.log(arr)
-        } else {
-            console.log('Cannot submit a blank post')
         }
     }
 
